@@ -1,51 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
-    <title>我的个人网站</title>
-    <style>
-        body {
-            font-family: Arial;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        nav {
-            background: #f0f8ff;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        a {
-            margin-right: 15px;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churis的学习空间 | 主界面</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- 导航栏 -->
     <nav>
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我</a>
-        <a href="contact.html">联系</a>
+        <div class="container nav-container">
+            <div class="logo">StudySpace</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="study-log.html">学习记录</a>
+                <a href="resources.html">学习资料</a>
+            </div>
+        </div>
     </nav>
 
-    <h1>欢迎来到我的网站！</h1>
-    <p>这是我的第一个个人网站，用HTML和CSS制作。</p>
-    <p>👇 这是一个示例图片（替换成你自己的照片）：</p>
-    <img src="https://via.placeholder.com/200" alt="头像">
+    <!-- 主内容区 -->
+    <main class="container">
+        <!-- 个人介绍区 -->
+        <section style="margin-top: 50px; margin-bottom: 50px;">
+            <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                <img src="assets/avatar.jpg" alt="头像"
+                    style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent);">
+                <div>
+                    <h1 style="font-size: 2.5rem; margin-bottom: 10px;">你好，我是<span
+                            style="color: var(--accent);">Churis</span></h1>
+                    <p style="font-size: 1.2rem; color: var(--primary);">微电子大三学生 | 数字IC设计方向</p>
+                    <p style="margin-top: 15px; max-width: 600px;">
+                        我正在学习数字IC设计，这个网站将记录我的学习旅程。
+                        每天进步一点点，坚持带来大改变！
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <h2>最近更新</h2>
-    <ul>
-        <li>2024年：开始学习建站</li>
-    </ul>
+        <!-- 当前目标区 -->
+        <section>
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; display: flex; align-items: center;">
+                <span
+                    style="background: var(--accent); width: 10px; height: 25px; display: inline-block; margin-right: 10px;"></span>
+                本周核心目标
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <!-- 目标卡片1 -->
+                <div class="card">
+                    <h3 style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span
+                            style="background: var(--primary); color: white; width: 25px; height: 25px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px;">1</span>
+                        数字集成电路复习
+                    </h3>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li>复习组合逻辑知识</li>
+                        <li>掌握时序逻辑设计和相关参数</li>
+                        <li>存储器等其他部分</li>
+                    </ul>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.9rem; color: #718096;">截止: 6月10日</span>
+                        <div style="display: flex; gap: 5px;">
+                            <span
+                                style="background: var(--accent); width: 15px; height: 15px; border-radius: 50%;"></span>
+                            <span style="background: #E2E8F0; width: 15px; height: 15px; border-radius: 50%;"></span>
+                            <span style="background: #E2E8F0; width: 15px; height: 15px; border-radius: 50%;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 目标卡片2 -->
+                <div class="card">
+                    <h3 style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span
+                            style="background: var(--primary); color: white; width: 25px; height: 25px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px;">2</span>
+                        Verilog语法掌握
+                    </h3>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li>基础语法复习</li>
+                        <li>相关网站刷题</li>
+                        <li>复杂电路设计</li>
+                    </ul>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.9rem; color: #718096;">每日进行</span>
+                        <div style="display: flex; gap: 5px;">
+                            <span
+                                style="background: var(--accent); width: 15px; height: 15px; border-radius: 50%;"></span>
+                            <span
+                                style="background: var(--accent); width: 15px; height: 15px; border-radius: 50%;"></span>
+                            <span style="background: #E2E8F0; width: 15px; height: 15px; border-radius: 50%;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 目标卡片3 -->
+                <div class="card">
+                    <h3 style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span
+                            style="background: var(--primary); color: white; width: 25px; height: 25px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px;">3</span>
+                        卷积加速器学习
+                    </h3>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li>研究开源项目代码</li>
+                        <li>FPGA上板测试</li>
+                        <li>进一步研究</li>
+                    </ul>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.9rem; color: #718096;">截止: 6月30日</span>
+                        <div style="display: flex; gap: 5px;">
+                            <span style="background: #E2E8F0; width: 15px; height: 15px; border-radius: 50%;"></span>
+                            <span style="background: #E2E8F0; width: 15px; height: 15px; border-radius: 50%;"></span>
+                            <span style="background: #E2E8F0; width: 15px; height: 15px; border-radius: 50%;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Churis的学习空间 | 大三学生的成长记录</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">每日进步一点点，坚持带来大改变</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churis的学习空间 | 学习资料</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">StudySpace</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="study-log.html">学习记录</a>
+                <a href="resources.html">学习资料</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="margin-top: 50px; margin-bottom: 50px;">
+        <h1 style="font-size: 2rem; margin-bottom: 30px; display: flex; align-items: center;">
+            <span
+                style="background: var(--accent); width: 10px; height: 30px; display: inline-block; margin-right: 15px;"></span>
+            学习资源库
+        </h1>
+
+        <!-- 分类导航 -->
+        <div style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap;">
+            <button class="btn"
+                style="background: white; color: var(--accent); border: 2px solid var(--accent);">全部资源</button>
+            <button class="btn" style="background: #E2E8F0; color: var(--text);">数字集成电路</button>
+            <button class="btn" style="background: #E2E8F0; color: var(--text);">其他</button>
+        </div>
+
+        <!-- 资源网格 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px;">
+            <!-- 资源卡片1 -->
+            <div class="card">
+                <h3 style="margin-bottom: 15px; display: flex; align-items: center;">
+                    <a href="https://reactjs.org/docs/getting-started.html" target="_blank"
+                        style="text-decoration: none; color: inherit;">
+                        <span style="color: var(--accent); margin-right: 10px;">★</span>
+                        React官方文档
+                    </a>
+                </h3>
+                <p style="color: #718096; margin-bottom: 20px;">React官方最新文档，包含Hooks、组件设计等核心概念</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.9rem; color: #718096;">官方资源</span>
+                    <div>
+                        <span
+                            style="background: #E2E8F0; padding: 3px 8px; border-radius: 20px; font-size: 0.8rem;">前端</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 资源卡片2 -->
+            <div class="card">
+                <h3 style="margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="color: var(--accent); margin-right: 10px;">★</span>
+                    算法图解
+                </h3>
+                <p style="color: #718096; margin-bottom: 20px;">以图文方式讲解常见算法，适合入门学习</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.9rem; color: #718096;">书籍</span>
+                    <div>
+                        <span
+                            style="background: #E2E8F0; padding: 3px 8px; border-radius: 20px; font-size: 0.8rem;">算法</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Churis的学习空间 | 大三学生的成长记录</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">每日进步一点点，坚持带来大改变</p>
+        </div>
+    </footer>
+</body>
+
+</html>
