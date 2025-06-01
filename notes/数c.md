@@ -62,6 +62,14 @@
 - MOS晶体管：
   - 以数字方向看，一个MOS晶体管相当于一个开关
   - 长／短沟道的MOS晶体管I-V公式
+    - 长沟道NMOS：
+      - V_GS<V_T：截止，近似I_D＝０
+      - V_DS>V_GS-V_T：饱和区，满足: $I_D=\frac{\mu_nC_{OX}}{2}\frac{W}{L}{(V_{GS}-V_T)}^2(1+\lambda V_{DS})$
+      - V_DS<V_GS-V_T：线性区，满足: $I_D=\mu_nC_{OX}\frac{W}{L}((V_{GS}-V_T)V_{DS}-\frac{V_{DS}^2}{2})$
+    - 短沟道NMOS：
+      - 饱和电压改变（加分之乘）: $V_{DSAT}=\frac{(V_{GS}-V_T)\cdot E_CL}{(V_{GS}-V_T)+E_CL}$
+      - 饱和区的IV公式是在长沟道基础上 $\cdot \frac{1}{1+\frac{(V_{GS}-V_T)}{E_CL}}$
+      - 线性区的IV公式是在长沟道基础上 $\cdot \frac{1}{1+\frac{V_{DS}}{E_CL}}$
   - 寄生电容
   - 短沟道效应
 
@@ -78,5 +86,6 @@
   - 低电平噪声容限NM_L=V_IL-V_OL
   - 芯片功率的限制因素：结温
   - 芯片功耗P：包括静态功耗和动态功耗
-	
+3. 电阻负载型反相器
+
 
